@@ -1,0 +1,62 @@
+<style type="text/css">
+	a:link {
+		color: black;
+	}
+
+	/* visited link */
+	a:visited {
+		color: black;
+	}
+
+	/* mouse over link */
+	a:hover {
+		color: yellow;
+	}
+
+	/* selected link */
+	a:active {
+		color: white;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:visited {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	a:active {
+		text-decoration: none;
+	}
+	
+	.bar{
+		margin-left: -60px;
+		margin-top: 20px;
+		position: absolute;
+		z-index: -3;
+	}
+
+	table, td, th {
+		border: none;
+	}
+
+	table {
+		width: 60%;
+	}
+
+	th {
+		height: 50px;
+	}
+
+	.homebar{
+		margin-left: 285px;
+		margin-top: -115px;
+	}
+
+
+</style>

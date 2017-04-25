@@ -1,0 +1,51 @@
+<style  type="text/css">
+	.banner{
+		margin-left: -8px;
+		margin-top: -8px;
+	}
+
+	.bannerlow{
+		margin-left: -8px;
+	}
+	
+	.jiitlogo{
+		margin-left: 20px;
+		margin-top: -170px;
+		height: 300px;
+		width: 300px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.rezieTextbox
+	{
+		width:80px; height : 30px; padding: 1px;
+	}
+	p.textbox
+	{
+		line-height : 200%;
+	}
+		.wrapper {
+			text-align: center;
+			}
+
+		.button {
+			position: center;
+			}
+	.input
+{
+    width:40%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+body 
+{
+	font : times new roman;
+	font-size : 22;
+}
+.table
+{
+	font : times new roman;
+	font-size : 22;	
+}
+</style>

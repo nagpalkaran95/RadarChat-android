@@ -1,0 +1,23 @@
+<style type="text/css">
+body{
+		background-image: url("background.jpg");
+}
+
+.banner{
+		margin-left: -8px;
+		margin-top: -8px;
+}
+
+.bannerlow{
+		margin-left: -8px;
+}
+
+.jiitlogo{
+		margin-left: 20px;
+		margin-top: -170px;
+		height: 300px;
+		width: 300px;
+		position: relative;
+		z-index: 1;
+}
+</style>
