@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.nagpal.karan.radarchat.Chats"
+        android:id="@+id/chatsLayout">
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/tool_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="UserName"
+            android:id="@+id/userName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgProfilePicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userName"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/blank"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bluetooth is ON. You are good to GO!"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            android:id="@+id/turnedON"
+            android:textAllCaps="false"
+            android:layout_below="@+id/imgProfilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Looks like your Bluetooth is in the OFF State"
+            android:id="@+id/turnedOFF"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:layout_below="@+id/imgProfilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Chat Room"
+            android:id="@+id/newChat"
+            android:background="@drawable/button_shape"
+            android:textSize="18dp"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:layout_below="@id/turnedOFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn ON Bluetooth"
+            android:id="@+id/turnON"
+            android:background="@drawable/button_shape"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="invisible"
+            android:layout_below="@id/turnedOFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+
+</RelativeLayout>
+

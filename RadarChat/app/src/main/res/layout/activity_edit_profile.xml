@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editProfileLayout"
+    tools:context="com.nagpal.karan.radarchat.edit_profile">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/tool_bar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="200dp"
+        android:id="@+id/display_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/blank"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="5dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_pic"
+        android:layout_centerHorizontal="true"
+        android:text="Change Profile Picture"
+        android:textAllCaps="false"
+        android:id="@+id/edit_pic"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:onClick="changePic"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="30dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/edit_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username"
+        android:id="@+id/userName"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change User Name"
+        android:textAllCaps="false"
+        android:id="@+id/edit_user"
+        android:layout_below="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="changeUser"
+        android:backgroundTint="@color/colorAccent"/>
+
+</RelativeLayout>
